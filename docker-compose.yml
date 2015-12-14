@@ -1,0 +1,18 @@
+elasticsearch:
+  image: elasticsearch
+  ports:
+    - "9200:9200"
+
+fluentd:
+  build: fluentd
+  ports:
+    - "24224:24224"
+  links:
+    - elasticsearch:elasticsearch
+
+kibana:
+  image: kibana
+  links:
+    - elasticsearch:elasticsearch
+  ports:
+    - "5601:5601"
