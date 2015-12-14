@@ -5,8 +5,8 @@ similar to the [ELK stack](https://www.elastic.co/webinars/introduction-elk-stac
 
 ## Requirements
 
-To run this you only need docker installed on your system, I used dokcer machine
-on OSX. Also you must have `docker-compose`.
+To run this you need `docker` and `docker-compose` installed on your system, I used docker machine
+on OSX.
 
 ## How to use
 
